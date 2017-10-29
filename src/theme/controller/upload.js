@@ -10,6 +10,7 @@ export default class extends Base {
   async indexAction(){
     //auto render template file index_index.html
     let userinfo = await this.session('userinfo');
+    console.log(think.isEmpty(userinfo));
     if(think.isEmpty(userinfo)){
       this.assign('username','Login');
       this.assign('logout','');

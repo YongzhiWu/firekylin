@@ -16,13 +16,15 @@
 	}
 	.login-box{
 		position: absolute;
-		top: 30%;
-		left: 75%;
-		margin-left: -170px;
-		margin-top: -120px;
+		top: 50%;
+		left: 50%;
 		width: 390px;
 		height: 500px;
 		background-color: #f8f7f7;
+		border: thin solid;
+		-webkit-transform: translate(-50%,-50%);  
+      -ms-transform: translate(-50%,-50%);  
+          transform: translate(-50%,-50%); 
 	}
 	.login-header{
 		width: 100%;
@@ -73,35 +75,18 @@
 	a{
 		color: #cdbca3;
 	}
-	.up{
-		position: fixed;
-		left: 45%;
-		bottom: 50px;
-		width: 130px;
-		font-size: 20px;
-		background-color: rgba(255,255,255,.3);
-		text-align: center;
-		border-radius: 5px;
-		color: blue;
-		cursor: pointer;
-		padding: 10px;
-	}
 </style>
 <div class="login-box">
-		<div class="login-header">HUB帐号登录</div>
+		<div class="login-header">ThemeStore帐号登录</div>
 		<div class="login-body">
 			<form action="" method="POST">
 				<div class="form-group">
-					<label></label>
-					<input type="text" name="user-id" placeholder="教工号/学号/手机/邮箱(ID/Phone/Email)">
+					<label for="user-id">帐&nbsp;&nbsp;&nbsp;&nbsp;号</label>
+					<input type="text" name="user-id" placeholder="帐号/手机/邮箱(ID/Phone/Email)">
 				</div>
 				<div class="form-group">
 					<label for="password">密&nbsp;&nbsp;&nbsp;&nbsp;码</label>
 					<input type="password" name="password" placeholder="请输入密码(Password)">
-				</div>
-				<div class="form-group">
-					<label for="school">学&nbsp;&nbsp;&nbsp;&nbsp;校</label>
-					<select ></select>
 				</div>
 				<div class="form-group">
 					<button type="signin">登 录 sign in</button>
@@ -116,4 +101,4 @@
 				<br>
 			</div>
 		</div>
-	</div>
+</div>
